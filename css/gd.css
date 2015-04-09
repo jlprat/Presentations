@@ -1,0 +1,20 @@
+#gdSlides footer {
+    padding-top: 2em !important;
+}
+
+#gdSlides .logo {
+    background-image: url('../images/retina_GameDuell_logo.png');
+    background-size: cover;
+    width: 482px;
+    height: 144px;
+    margin: auto;
+}
+
+#gdSlides .badge {
+    background-image: url('../images/GD_presentation_flameflag.png');
+    width: 67px;
+    height: 86px;
+    position: absolute;
+    left: 10%;
+    top: 0;
+}

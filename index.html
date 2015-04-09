@@ -4,10 +4,12 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>reveal.js - The HTML Presentation Framework</title>
+		<title>From front end development to game development</title>
 
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab">
+		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon; charset=binary">
+
+		<meta name="description" content="GameDuell’s HTML 5 Game Architect will demystify game development for all the front end developers out there. He will particularly emphasize on how front end techniques can be successfully applied to build great games that run across platforms. Josep will show alternatives to Canvas as well as WebGL and introduce a nice little range of utilities that facilitate the development process largely.">
+		<meta name="author" content="Josep Prat">
 
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -15,7 +17,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+		<link rel="stylesheet" href="css/theme/beige.css" id="theme">
+		<link rel="stylesheet" href="css/gd.css"/>
 
 		<!-- Code syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -36,23 +39,29 @@
 
 	<body>
 
-		<div class="reveal">
+		<div id="gdSlides" class="reveal">
 
-			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="badge"></div>
 			<div class="slides">
 				<section>
-					<h1>Reveal.js</h1>
-					<h3>The HTML Presentation Framework</h3>
-					<p>
-						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
-					</p>
+					<div class="logo"></div>
+					<h2>From front end development to game development</h2>
+					<h4>- an alternative way to develop striking games for all platforms -</h4>
+					<footer>
+						<p class="author">
+							<small>Josep Prat - GameDuell GmbH / <a href="http://twitter.com/jlprat">@jlprat</a></small>
+						</p>
+						<small>Apps World - 2015/04/23</small>
+					</footer>
 				</section>
 
 				<section>
-					<h2>Hello There</h2>
-					<p>
-						reveal.js enables you to create beautiful interactive slide decks using HTML. This presentation will show you examples of what it can do.
-					</p>
+					<h2>What will I learn today?</h2>
+					<ul>
+						<li class="fragment">Different approaches to games development</li>
+						<li class="fragment">How to apply front end techniques to game development</li>
+						<li class="fragment">Utilities to help you out</li>
+					</ul>
 				</section>
 
 				<!-- Example of nested vertical slides -->
@@ -173,7 +182,8 @@
 						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/serif.css'); return false;">Serif</a> -
 						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/night.css'); return false;">Night</a> -
 						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/moon.css'); return false;">Moon</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/solarized.css'); return false;">Solarized</a>
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/solarized.css'); return false;">Solarized</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/blood.css'); return false;">Blood</a>
 					</p>
 				</section>
 
