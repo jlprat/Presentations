@@ -19,11 +19,7 @@
     top: 0;
 }
 
-image {
-    border: 0;
-}
-
 #gdSlides .stacked {
     position: absolute;
-    top: 20%;
+    width: 100%;
 }
