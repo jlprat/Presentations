@@ -183,7 +183,8 @@
 #gdSlides .card.playing.visible {
     -webkit-transform: translate(50%, -25%) rotate(0deg);
         -ms-transform: translate(50%, -25%) rotate(0deg);
-            transform: translate(50%, -25%) rotate(0deg);}
+            transform: translate(50%, -25%) rotate(0deg);
+}
 
 #gdSlides .playground {
     width: 400px;

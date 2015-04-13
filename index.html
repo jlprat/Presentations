@@ -251,10 +251,10 @@
 	background-color: gold;
 	border-radius: 7px;
 }
-banner.fall-down {
+.banner.fall-down {
 	transform: translateY(-100%);
 }
-banner.fall-down.visible {
+.banner.fall-down.active {
 	transform: translateY(0);
 }
 .slow {
@@ -307,11 +307,11 @@ banner.fall-down.visible {
 	background-color: gold;
 	border-radius: 7px;
 }
-banner.errorMessage { background-color: red; }
+.banner.errorMessage { background-color: red; }
 .banner.zoom-in {
 	transform: scale( 0.1 );
 }
-.banner.zoom-in.visible {
+.banner.zoom-in.active {
 	transform: scale( 1 );
 }
 .slow { transition: all 1.5s ease; }
@@ -353,14 +353,14 @@ banner.errorMessage { background-color: red; }
 					<section>
 						<h2>Behind the scenes</h2>
 						<pre><code>.banner {
-min-height: 2em;
+	min-height: 2em;
 	background-color: gold;
 	border-radius: 7px;
 }
 .banner.fade-out {
 	opacity: 1;
 }
-.banner.fade-out.visible {
+.banner.fade-out.active {
 	opacity: 0;
 }
 .slow { transition: all 1.5s ease; }
@@ -369,14 +369,14 @@ min-height: 2em;
 					<section>
 						<h2>Behind the scenes</h2>
 						<pre><code>.card {
-background-size: cover;
+	background-size: cover;
 	width: 161px;
 	height: 221px;
 }
 .card.fade-out {
 	opacity: 1;
 }
-.card.fade-out.visible {
+.card.fade-out.active {
 	opacity: 0;
 }
 .slow { transition: all 1.5s ease; }
@@ -398,6 +398,36 @@ background-size: cover;
 							<div class="fragment card ace playing slow"></div>
 						</div>
 					</section>
+					<section>
+						<h2>Behind the scenes</h2>
+						<pre><code>.banner {
+min-height: 2em;
+	background-color: gold;
+	border-radius: 7px;
+}
+.banner.feedback {
+	width: 300px;
+	transform: rotate(-90deg);
+}
+						</code></pre>
+					</section>
+					<section>
+						<h2>Behind the scenes</h2>
+						<pre><code>.card {
+	background-size: cover;
+	width: 161px;
+	height: 221px;
+}
+.card.playing {
+	transform: translateY(120%) rotate(180deg);
+}
+.card.playing.active {
+	transform: translate(50%, -25%) rotate(0deg);
+}
+.slow { transition: all 1.5s ease; }
+						</code></pre>
+					</section>
+
 				</section>
                 <section>
                     <h2>Tips to Improve Productivity</h2>
