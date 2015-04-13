@@ -83,22 +83,8 @@ body {
   -webkit-transform: rotateX(90deg);
           transform: rotateX(90deg); }
   .reveal .slides section .fragment.roll-in.visible {
-    -webkit-transform: rotateX(0deg);
-            transform: rotateX(0deg); }
-
-.reveal .slides section .fragment.slide-in-right {
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%); }
-  .reveal .slides section .fragment.slide-in-right.visible {
-    -webkit-transform: translateX(0);
-            transform: translateX(0); }
-
-.reveal .slides section .fragment.slide-in-left {
-    -webkit-transform: translateX(100%);
-    transform: translateX(-100%); }
-.reveal .slides section .fragment.slide-in-left.visible {
-    -webkit-transform: translateX(0);
-    transform: translateX(0); }
+    -webkit-transform: rotateX(0);
+            transform: rotateX(0); }
 
 .reveal .slides section .fragment.fade-out {
   opacity: 1;

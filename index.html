@@ -204,12 +204,14 @@
                     <section>
                         <h2>Casual Skill Gaming</h2>
                         <div class="stacked fragment slide-in-left">
-                            <img src="images/bel.png" alt="bel"/>
+                            <img src="images/bel.png" alt="Belote"/>
                         </div>
                         <div class="stacked fragment slide-in-right">
-                            <img src="images/mbs.jpg" alt="mbs"/>
+                            <img src="images/mbs.jpg" alt="Balloon Blast"/>
                         </div>
-                        <div class="stacked fragment slide-in-right">Kno</div>
+                        <div class="stacked fragment slide-in-right">
+                            <img src="images/kno.jpg" alt="Roll 5"/>
+                        </div>
                     </section>
                 </section>
 
@@ -226,33 +228,183 @@
                         </p>
                     </section>
                 </section>
+				<section>
 
-                <section>
-                    <h2>What's the difference between these?</h2>
-                    translate
-                    <aside class="notes">banner appearing, card moving</aside>
-                </section>
-                <section>
-                    <h2>What's the difference between these?</h2>
-                    scale
-                    <aside class="notes">opening div, card growing in a hand</aside>
-                </section>
-                <section>
-                    <h2>What's the difference between these?</h2>
-                    fade
-                    <aside class="notes">closing div, mario mushroom disappearing</aside>
-                </section>
-                <section>
-                    <h2>What's the difference between these?</h2>
-                    rotate
-                    <aside class="notes">image rotated, make card rotate while moving</aside>
-                </section>
+					<section>
+						<h2>What's the difference between these?</h2>
+					</section>
+					<section class="full">
+						<div class="banner fragment fall-down slow">
+							This is a super Banner!
+						</div>
+					</section>
+					<section>
+						<div class="fragment" >
+							<div class="card ace slide slow"></div>
+						</div>
+					</section>
+					<section>
+						<h2>Behind the scenes</h2>
+						<pre><code>
+.banner {
+	min-height: 2em;
+	background-color: gold;
+	border-radius: 7px;
+}
+banner.fall-down {
+	transform: translateY(-100%);
+}
+banner.fall-down.visible {
+	transform: translateY(0);
+}
+.slow {
+	transition: all 1.5s ease;
+}
+						</code></pre>
+					</section>
+					<section>
+						<h2>Behind the scenes</h2>
+						<pre><code>
+.card {
+	background-size: cover;
+	width: 161px;
+	height: 221px;
+}
+.card.ace {
+	background-image: url('../images/aceHearts.png');
+}
+.card.move {
+	transform: translateX(300px);
+}
+.slow {
+	transition: all 1.5s ease;
+}
+						</code></pre>
+					</section>
+				</section>
+
+				<section>
+
+					<section>
+						<h2>... and these?</h2>
+					</section>
+					<section>
+						<div class="banner errorMessage fragment zoom-in">
+							This field must be corrected
+						</div>
+					</section>
+					<section>
+						<div class="fragment hand">
+							<div class="card centered ace"></div>
+							<div class="card centered queen"></div>
+							<div class="card centered king slow grow"></div>
+						</div>
+					</section>
+					<section>
+						<h2>Behind the scenes</h2>
+						<pre><code>.banner {
+	min-height: 2em;
+	background-color: gold;
+	border-radius: 7px;
+}
+banner.errorMessage { background-color: red; }
+.banner.zoom-in {
+	transform: scale( 0.1 );
+}
+.banner.zoom-in.visible {
+	transform: scale( 1 );
+}
+.slow { transition: all 1.5s ease; }
+						</code></pre>
+					</section>
+					<section>
+						<h2>Behind the scenes</h2>
+						<pre><code>.card {
+	background-size: cover;
+	width: 161px;
+	height: 221px;
+}
+.card.ace { background-image: url('../images/aceHearts.png'); }
+.card.queen { background-image: url('../images/queenHearts.png'); }
+.card.king { background-image: url('../images/kingHearts.png'); }
+.card.grow.active {
+	transform: scale( 1.5 );
+}
+.slow { transition: all 1.5s ease; }
+						</code></pre>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>... or these?</h2>
+					</section>
+					<section>
+						<div class="banner fragment fade-out slow">
+							This message will be destroyed immediately!
+						</div>
+					</section>
+					<section>
+						<div class="fragment fade-out slow meld">
+							<div class="stacked centered card ace slight-rotated-left"></div>
+							<div class="stacked centered card queen slight-rotated-right"></div>
+							<div class="stacked centered card king"></div>
+						</div>
+					</section>
+					<section>
+						<h2>Behind the scenes</h2>
+						<pre><code>.banner {
+min-height: 2em;
+	background-color: gold;
+	border-radius: 7px;
+}
+.banner.fade-out {
+	opacity: 1;
+}
+.banner.fade-out.visible {
+	opacity: 0;
+}
+.slow { transition: all 1.5s ease; }
+						</code></pre>
+					</section>
+					<section>
+						<h2>Behind the scenes</h2>
+						<pre><code>.card {
+background-size: cover;
+	width: 161px;
+	height: 221px;
+}
+.card.fade-out {
+	opacity: 1;
+}
+.card.fade-out.visible {
+	opacity: 0;
+}
+.slow { transition: all 1.5s ease; }
+						</code></pre>
+					</section>
+				</section>
+				<section>
+
+					<section>
+						<h2>What's the difference between these?</h2>
+						rotate
+						<aside class="notes">image rotated, make card rotate while moving</aside>
+					</section>
+					<section>
+						<div class="banner feedback">feedback</div>
+					</section>
+					<section>
+						<div class="playground">
+							<div class="fragment card ace playing slow"></div>
+						</div>
+					</section>
+				</section>
                 <section>
                     <h2>Tips to Improve Productivity</h2>
                     <ul>
                         <li>WebSockets</li>
                         <li>Box2D</li>
-                        <li>Work with your own coordinates system</li>
+                        <li>Work with your own coordinate system</li>
                     </ul>
                 </section>
 			</div>

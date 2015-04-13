@@ -55,7 +55,7 @@ module.exports = function(grunt) {
 
 		autoprefixer: {
 			dist: {
-				src: 'css/reveal.css'
+				src: ['css/reveal.css', 'css/gd.css']
 			}
 		},
 
@@ -128,7 +128,7 @@ module.exports = function(grunt) {
 				tasks: 'css-themes'
 			},
 			css: {
-				files: [ 'css/reveal.scss' ],
+				files: [ 'css/reveal.scss', 'css/gd.css' ],
 				tasks: 'css-core'
 			},
             html: {
