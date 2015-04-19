@@ -46,12 +46,11 @@
 				<section>
 					<div class="logo"></div>
 					<h2>From front end development to game development</h2>
-					<h4>- an alternative way to develop striking games for all platforms -</h4>
+					<!--<h4>- an alternative way to develop striking games for all platforms -</h4>-->
 					<footer>
 						<p class="author">
-							<small>Josep Prat - GameDuell GmbH / <a href="http://twitter.com/jlprat">@jlprat</a></small>
+                            <small>Apps World | 2015/04/23 | Josep Prat | GameDuell GmbH | <a href="http://twitter.com/jlprat">@jlprat</a></small>
 						</p>
-						<small>Apps World - 2015/04/23</small>
 					</footer>
 				</section>
 				<section>
@@ -203,15 +202,15 @@
 
                     <section>
                         <div class="logo"></div>
-                        <h2>Bringing people together to have a good time with games - wherever, whenever!</h2>
+                        <h3>Bringing people together to have a good time with games wherever, whenever!</h3>
                     </section>
 
                     <section>
                         <h2>Casual Skill Gaming</h2>
-	                    <div class="stacked fragment slide-in-right">
-		                    <img src="images/kno.jpg" alt="Roll 5"/>
-	                    </div>
-	                    <div class="stacked fragment slide-in-left">
+                        <div class="stacked fragment slide-in-right">
+                            <img src="images/kno.jpg" alt="Roll 5"/>
+                        </div>
+                        <div class="stacked fragment slide-in-left">
                             <img src="images/bel.png" alt="Belote"/>
                         </div>
                         <div class="stacked fragment slide-in-right">
@@ -240,7 +239,7 @@
 					</section>
 					<section class="full">
 						<div class="banner fragment fall-down slow">
-							Please accept our cookies
+							This site uses cookies!
 						</div>
 					</section>
 					<section>
@@ -341,12 +340,12 @@
 					<section>
 						<h2>... or these?</h2>
 					</section>
-					<section>
+					<section data-transition="none">
 						<div class="banner fragment fade-out slow">
 							This message will be destroyed immediately!
 						</div>
 					</section>
-					<section>
+					<section data-transition="none">
 						<div class="fragment fade-out slow meld">
 							<div class="stacked centered card ace slight-rotated-left"></div>
 							<div class="stacked centered card queen slight-rotated-right"></div>
@@ -392,10 +391,10 @@
 						<h2>... or even these?</h2>
 						<aside class="notes">image rotated, make card rotate while moving</aside>
 					</section>
-					<section>
+					<section data-transition="none">
 						<div class="banner feedback">feedback</div>
 					</section>
-					<section>
+					<section data-transition="none">
 						<div class="playground">
 							<div class="fragment card ace playing slow"></div>
 						</div>
@@ -403,7 +402,7 @@
 					<section>
 						<h2>Behind the scenes</h2>
 						<pre><code>.banner {
-	min-height: 2em;
+    min-height: 2em;
 	background-color: gold;
 	border-radius: 7px;
 }
@@ -502,6 +501,15 @@
 					{ src: 'plugin/notes/notes.js', async: true }
 				]
 			});
+
+            window.addEventListener("mousedown", handleClick, false);
+            window.addEventListener("contextmenu", function(e) { e.preventDefault(); }, false);
+
+            function handleClick(e) {
+                e.preventDefault();
+                if(e.button === 0) Reveal.next();
+                if(e.button === 2) Reveal.prev();
+            }
 
 		</script>
 
