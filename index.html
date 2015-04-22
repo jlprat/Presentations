@@ -1,52 +1,517 @@
 <!doctype html>
-<html>
+<html lang="en">
+
 	<head>
-
 		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="chrome=1">
-		<title>reveal.js - The HTML Presentations Framework</title>
 
-		<link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="css/main.css">
+		<title>From front end development to game development</title>
 
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon; charset=binary">
+
+		<meta name="description" content="GameDuell’s HTML 5 Game Architect will demystify game development for all the front end developers out there. He will particularly emphasize on how front end techniques can be successfully applied to build great games that run across platforms. Josep will show alternatives to Canvas as well as WebGL and introduce a nice little range of utilities that facilitate the development process largely.">
+		<meta name="author" content="Josep Prat @jlprat">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/beige.css" id="theme">
+		<link rel="stylesheet" href="css/gd.css"/>
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
 
 		<!--[if lt IE 9]>
-		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
-
 	</head>
+
 	<body>
-		<div class="wrapper">
 
-			<header>
+		<div id="gdSlides" class="reveal">
 
-				<h1>reveal.js</h1>
-				<p>
-					The HTML Presentation Framework &mdash; Site coming soon
-				</p>
+			<div class="badge"></div>
+			<div class="slides">
+				<section>
+					<div class="logo"></div>
+					<h2>From front end development to game development</h2>
+					<!--<h4>- an alternative way to develop striking games for all platforms -</h4>-->
+					<footer>
+						<p class="author">
+                            <small>Apps World | 2015/04/23 | Josep Prat | GameDuell GmbH | <a href="http://twitter.com/jlprat">@jlprat</a></small>
+						</p>
+					</footer>
+				</section>
+				<section>
 
-			</header>
+					<section>
+						<h1>Browser Games</h1>
+						<h2>Only for Specialists</h2>
+						<aside class="notes">
+							* Games are complicated, it's only for specialists!
+							1 Common Ways
+							   * diff options: flash, webGL, Canvas, ASCII
+							   * Lots of libs available:
+							      * starling
+							      * pixi
+							      * unreal
+							      * playcanvas
+							      * ...
+							2 DOM
+							   * who are we -- Were are my modals?
+							      * Skill Games
+							      * No hardcore games
+							   * DOM
+							      * What's the diff between:
+							         translate, scale, fade, rotate
+							3 Tips & Libs
+							   * WS
+							   * Audio API
+							   * Convert to 0 .. 100 coord system
+							   * box2d
+							   * ...
+							* Wrap up:  Games are not so different now! FE devs can also do game dev!
+						</aside>
+					</section>
 
-			<footer>
+					<section>
+						<section>
+							<h2>Common Approaches</h2>
+							<div class="stacked fragment slide-in-right">
+								<img src="images/starling.jpg" alt="starling"/>
+							</div>
+							<div class="stacked fragment slide-in-left">
+	                            <img src="images/pixi.jpg" alt="canvas"/>
+	                        </div>
+	                        <div class="stacked fragment slide-in-right">
+	                            <img src="images/unreal.jpg" alt="webgl"/>
+	                        </div>
+	                        <div class="stacked fragment slide-in-left">
+	                            <img src="images/ascii.png" alt="ascii"/>
+	                        </div>
+						</section>
+					</section>
+				</section>
+                <section>
+                    <section>
+                        <h2>Specialization needed</h2>
+                    </section>
 
-				<p>
-					<a href="http://lab.hakim.se/reveal-js">Try the demo</a>
-					<a href="https://github.com/hakimel/reveal.js/releases">Download</a>
-				</p>
+                    <section>
+                        <h2>Flash</h2>
+                        <ul>
+                            <li>New Language</li>
+                            <li>Different Best Practices</li>
+                            <li>"Desktop Only"</li>
+                        </ul>
+                    </section>
 
-			</footer>
+                    <section>
+                        <h2>Canvas</h2>
+                        <ul>
+                            <li>Outside of the DOM</li>
+                            <li>Not so clear Separation Of Concerns</li>
+                            <li>Redundancy of Styles</li>
+                        </ul>
+                    </section>
+
+	                <section>
+		                <h2>WebGL</h2>
+		                <ul>
+			                <li>Low Level API</li>
+			                <li>New Terrain</li>
+			                <li>Shaders</li>
+		                </ul>
+	                </section>
+
+                </section>
+
+                <section>
+                    <section>
+                        <h2>Game Engines that can help you</h2>
+                    </section>
+
+	                <section>
+		                <h2>Starling</h2>
+		                <ul>
+			                <li>Flash Library</li>
+			                <li>App conversion</li>
+			                <li>Tweens, Blends, Multitouch...</li>
+		                </ul>
+		                <footer>
+			                <a href="http://gamua.com/starling/" target="_blank">www.gamua.com/starling/</a>
+		                </footer>
+	                </section>
+
+	                <section>
+		                <h2>Pixi.js</h2>
+		                <ul>
+			                <li>WebGL with Canvas Fallback</li>
+			                <li>Physics Library</li>
+			                <li>OpenSource</li>
+		                </ul>
+		                <footer>
+			                <a href="http://pixijs.com" target="_blank">www.pixijs.com</a>
+		                </footer>
+	                </section>
+
+                    <section>
+                        <h2>PlayCanvas</h2>
+                        <ul>
+                            <li>WebGL only</li>
+                            <li>Online Editor and Hosting</li>
+                            <li>Physics Library</li>
+                            <li>OpenSource</li>
+                        </ul>
+                        <footer>
+                            <a href="http://playcanvas.com" target="_blank">www.playcanvas.com</a>
+                        </footer>
+                    </section>
+
+                    <section>
+                        <h2>Unreal</h2>
+                        <ul>
+                            <li>Powerful Engine</li>
+                            <li>C++</li>
+                            <li>Cross Platform</li>
+                            <li>Physics, AI, Animation Effects...</li>
+                        </ul>
+                        <footer>
+                            <a href="https://www.unrealengine.com/" target="_blank">www.unrealengine.com</a>
+                        </footer>
+                    </section>
+
+                </section>
+
+                <section>
+
+                    <section>
+                        <h2>Which games do you produce?</h2>
+                    </section>
+
+                    <section>
+                        <div class="logo"></div>
+                        <h3>Bringing people together to have a good time with games wherever, whenever!</h3>
+                    </section>
+
+                    <section>
+                        <h2>Casual Skill Gaming</h2>
+                        <div class="stacked fragment slide-in-right">
+                            <img src="images/kno.jpg" alt="Roll 5"/>
+                        </div>
+                        <div class="stacked fragment slide-in-left">
+                            <img src="images/bel.png" alt="Belote"/>
+                        </div>
+                        <div class="stacked fragment slide-in-right">
+                            <img src="images/mbs.jpg" alt="Balloon Blast"/>
+                        </div>
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h2>Can we use the knowledge we acquired building webs?</h2>
+                    </section>
+
+                    <section>
+                        <p>
+                            <h1>YES!</h1>
+                            <h2 class="fragment roll-in">How?</h2>
+                            <h1 class="fragment roll-in">With DOM!</h1>
+                        </p>
+                    </section>
+                </section>
+				<section>
+
+					<section>
+						<h2>What's the difference between these?</h2>
+					</section>
+					<section class="full">
+						<div class="banner fragment fall-down slow">
+							This site uses cookies!
+						</div>
+					</section>
+					<section>
+						<div class="fragment" >
+							<div class="card ace slide slow"></div>
+						</div>
+					</section>
+					<section>
+						<h2>Behind the scenes</h2>
+						<pre><code>.banner {
+	min-height: 2em;
+	background-color: gold;
+	border-radius: 7px;
+}
+.banner.fall-down {
+	transform: translateY(-100%);
+}
+.banner.fall-down.active {
+	transform: translateY(0);
+}
+.slow {
+	transition: all 1.5s ease;
+}
+						</code></pre>
+					</section>
+					<section>
+						<h2>Behind the scenes</h2>
+						<pre><code>.card {
+	background-size: cover;
+	width: 161px;
+	height: 221px;
+}
+.card.ace {
+	background-image: url('../images/aceHearts.png');
+}
+.card.move {
+	transform: translateX(300px);
+}
+.slow {
+	transition: all 1.5s ease;
+}
+						</code></pre>
+					</section>
+				</section>
+
+				<section>
+
+					<section>
+						<h2>... and these?</h2>
+					</section>
+					<section>
+						<div class="banner errorMessage fragment zoom-in">
+							This field must be corrected
+						</div>
+					</section>
+					<section>
+						<div class="fragment hand">
+							<div class="card centered ace"></div>
+							<div class="card centered queen"></div>
+							<div class="card centered king slow grow"></div>
+						</div>
+					</section>
+					<section>
+						<h2>Behind the scenes</h2>
+						<pre><code>.banner {
+	min-height: 2em;
+	background-color: gold;
+	border-radius: 7px;
+}
+.banner.errorMessage { background-color: red; }
+.banner.zoom-in {
+	transform: scale( 0.1 );
+}
+.banner.zoom-in.active {
+	transform: scale( 1 );
+}
+.slow { transition: all 1.5s ease; }
+						</code></pre>
+					</section>
+					<section>
+						<h2>Behind the scenes</h2>
+						<pre><code>.card {
+	background-size: cover;
+	width: 161px;
+	height: 221px;
+}
+.card.ace { background-image: url('../images/aceHearts.png'); }
+.card.queen { background-image: url('../images/queenHearts.png'); }
+.card.king { background-image: url('../images/kingHearts.png'); }
+.card.grow.active {
+	transform: scale( 1.5 );
+}
+.slow { transition: all 1.5s ease; }
+						</code></pre>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>... or these?</h2>
+					</section>
+					<section data-transition="none">
+						<div class="banner fragment fade-out slow">
+							This message will be destroyed immediately!
+						</div>
+					</section>
+					<section data-transition="none">
+						<div class="fragment fade-out slow meld">
+							<div class="stacked centered card ace slight-rotated-left"></div>
+							<div class="stacked centered card queen slight-rotated-right"></div>
+							<div class="stacked centered card king"></div>
+						</div>
+					</section>
+					<section>
+						<h2>Behind the scenes</h2>
+						<pre><code>.banner {
+	min-height: 2em;
+	background-color: gold;
+	border-radius: 7px;
+}
+.banner.fade-out {
+	opacity: 1;
+}
+.banner.fade-out.active {
+	opacity: 0;
+}
+.slow { transition: all 1.5s ease; }
+						</code></pre>
+					</section>
+					<section>
+						<h2>Behind the scenes</h2>
+						<pre><code>.card {
+	background-size: cover;
+	width: 161px;
+	height: 221px;
+}
+.card.fade-out {
+	opacity: 1;
+}
+.card.fade-out.active {
+	opacity: 0;
+}
+.slow { transition: all 1.5s ease; }
+						</code></pre>
+					</section>
+				</section>
+				<section>
+
+					<section>
+						<h2>... or even these?</h2>
+						<aside class="notes">image rotated, make card rotate while moving</aside>
+					</section>
+					<section data-transition="none">
+						<div class="banner feedback">feedback</div>
+					</section>
+					<section data-transition="none">
+						<div class="playground">
+							<div class="fragment card ace playing slow"></div>
+						</div>
+					</section>
+					<section>
+						<h2>Behind the scenes</h2>
+						<pre><code>.banner {
+    min-height: 2em;
+	background-color: gold;
+	border-radius: 7px;
+}
+.banner.feedback {
+	width: 300px;
+	transform: rotate(-90deg);
+}
+						</code></pre>
+					</section>
+					<section>
+						<h2>Behind the scenes</h2>
+						<pre><code>.card {
+	background-size: cover;
+	width: 161px;
+	height: 221px;
+}
+.card.playing {
+	transform: translateY(120%) rotate(180deg);
+}
+.card.playing.active {
+	transform: translate(50%, -25%) rotate(0deg);
+}
+.slow { transition: all 1.5s ease; }
+						</code></pre>
+					</section>
+
+				</section>
+				<section>
+					<section>
+						<h2>Tips to Improve Productivity</h2>
+					</section>
+					<section>
+						<h2>WebSockets</h2>
+						<ul>
+							<li>Enables Full Duplex Communication</li>
+							<li>Perfect for Reactive Apps</li>
+							<li>Supported by All Major Browsers</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Box2D</h2>
+						<ul>
+							<li>Physics Library</li>
+							<li>Models a Gravity World</li>
+							<li>Collision Detection</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Work with your own coordinate system</h2>
+						<ul>
+							<li>Ideal for Responsive Games</li>
+							<li>Abstraction from the Real Screen Size</li>
+							<li>Keep Code Simple</li>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<h1>Browser Games</h1>
+					<h2>Not only for Specialists!</h2>
+				</section>
+				<section>
+					<h1>Q&A</h1>
+				</section>
+				<section>
+					<h2>Further Information</h2>
+					<div><a href="http://inside.gameduell.com/">inside.gameduell.com</a></div>
+					<div><a href="http://www.techtalk-berlin.de/">www.techtalk-berlin.de</a></div>
+				</section>
+			</div>
 
 		</div>
 
-		<script>
-		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
 
-		  ga('create', 'UA-43375306-1', 'revealjs.com');
-		  ga('send', 'pageview');
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+                slideNumber: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+            window.addEventListener("mousedown", handleClick, false);
+            window.addEventListener("contextmenu", function(e) { e.preventDefault(); }, false);
+
+            function handleClick(e) {
+                e.preventDefault();
+                if(e.button === 0) Reveal.next();
+                if(e.button === 2) Reveal.prev();
+            }
+
 		</script>
+
 	</body>
 </html>
