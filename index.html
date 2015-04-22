@@ -52,6 +52,31 @@
                             <small>Apps World | 2015/04/23 | Josep Prat | GameDuell GmbH | <a href="http://twitter.com/jlprat">@jlprat</a></small>
 						</p>
 					</footer>
+					<aside class="notes">
+						* Games are complicated, it's only for specialists!
+						1 Common Ways
+						* diff options: flash, webGL, Canvas, ASCII
+						* Lots of libs available:
+						* starling
+						* pixi
+						* unreal
+						* playcanvas
+						* ...
+						2 DOM
+						* who are we -- Were are my modals?
+						* Skill Games
+						* No hardcore games
+						* DOM
+						* What's the diff between:
+						translate, scale, fade, rotate
+						3 Tips & Libs
+						* WS
+						* Audio API
+						* Convert to 0 .. 100 coord system
+						* box2d
+						* ...
+						* Wrap up:  Games are not so different now! FE devs can also do game dev!
+					</aside>
 				</section>
 				<section>
 
@@ -59,29 +84,10 @@
 						<h1>Browser Games</h1>
 						<h2>Only for Specialists</h2>
 						<aside class="notes">
-							* Games are complicated, it's only for specialists!
-							1 Common Ways
-							   * diff options: flash, webGL, Canvas, ASCII
-							   * Lots of libs available:
-							      * starling
-							      * pixi
-							      * unreal
-							      * playcanvas
-							      * ...
-							2 DOM
-							   * who are we -- Were are my modals?
-							      * Skill Games
-							      * No hardcore games
-							   * DOM
-							      * What's the diff between:
-							         translate, scale, fade, rotate
-							3 Tips & Libs
-							   * WS
-							   * Audio API
-							   * Convert to 0 .. 100 coord system
-							   * box2d
-							   * ...
-							* Wrap up:  Games are not so different now! FE devs can also do game dev!
+							Browser Games...
+							Traditionally, the option of making browser games was reserved only for specialist developers.
+							How many of you are developers? And Front End developers? And Game Developers?
+							I would like to demystify this belief.
 						</aside>
 					</section>
 
@@ -100,12 +106,19 @@
 	                        <div class="stacked fragment slide-in-left">
 	                            <img src="images/ascii.png" alt="ascii"/>
 	                        </div>
+							<aside class="notes">
+								What comes to your mind, when you think about web games?
+								Flash, Canvas, WebGL and the one reserved traditionally for Front End Developers... Until now...
+							</aside>
 						</section>
 					</section>
 				</section>
                 <section>
                     <section>
                         <h2>Specialization needed</h2>
+	                    <asdide class="notes">
+		                    Why people think that games are only for specialists? Maybe, because of those examples we've just seen
+	                    </asdide>
                     </section>
 
                     <section>
@@ -115,6 +128,11 @@
                             <li>Different Best Practices</li>
                             <li>"Desktop Only"</li>
                         </ul>
+	                    <aside class="notes">
+		                    The bast majority of games to date are Flash. What's the problem with it?
+		                    it's a different language (OK, descendant of ECMAScript, but different language).
+		                    Lately, it encountered a big problem, mobile devices don't support them
+	                    </aside>
                     </section>
 
                     <section>
@@ -124,6 +142,11 @@
                             <li>Not so clear Separation Of Concerns</li>
                             <li>Redundancy of Styles</li>
                         </ul>
+	                    <aside class="notes">
+		                    This is the most common HTML5 approach of building games that must run everywhere.
+		                    Meanwhile it's in JS, it's not possible to take advantage of our familiar DOM, this will imply
+		                    that we need to recode some of our styles again, and most importantly, write them in JS.
+	                    </aside>
                     </section>
 
 	                <section>
@@ -133,6 +156,12 @@
 			                <li>New Terrain</li>
 			                <li>Shaders</li>
 		                </ul>
+		                <aside class="notes">
+			                This is a more uncommon way. Using WebGL we unleash all the potential of our games. But,
+			                great power comes with a great responsibility. It's completely new domain for most Front End
+			                developers.
+			                And it has a problem, some devices don't support WebGL, and you need to manually provide an alternative
+		                </aside>
 	                </section>
 
                 </section>
@@ -140,6 +169,9 @@
                 <section>
                     <section>
                         <h2>Game Engines that can help you</h2>
+	                    <aside class="notes">
+		                    But of course, there are some game engines that can help you building games.
+	                    </aside>
                     </section>
 
 	                <section>
@@ -152,6 +184,12 @@
 		                <footer>
 			                <a href="http://gamua.com/starling/" target="_blank">www.gamua.com/starling/</a>
 		                </footer>
+		                <aside class="notes">
+			                One of the most common game engines / frameworks is Starling.
+			                It is a flash library, it offers some app conversion features, so your game can run
+			                in mobile devices as native app. This can speed up your.
+			                But as we agreed, this is even in another language...
+		                </aside>
 	                </section>
 
 	                <section>
@@ -164,6 +202,11 @@
 		                <footer>
 			                <a href="http://pixijs.com" target="_blank">www.pixijs.com</a>
 		                </footer>
+		                <aside class="notes">
+			                Pixi.js. This game engine offers the best of canvas and WebGL, when available the game will
+			                be run in WebGL otherwise it will fallback to Canvas. It contains a physics library and it's
+			                opensource
+		                </aside>
 	                </section>
 
                     <section>
@@ -177,6 +220,10 @@
                         <footer>
                             <a href="http://playcanvas.com" target="_blank">www.playcanvas.com</a>
                         </footer>
+	                    <aside class="notes">
+		                    Playcanvas. If you can afford targeting only WebGL devices, this can be your friend, it has
+		                    an online editor and hosting. It's also opensource and it contains a physics library as well.
+	                    </aside>
                     </section>
 
                     <section>
@@ -190,6 +237,11 @@
                         <footer>
                             <a href="https://www.unrealengine.com/" target="_blank">www.unrealengine.com</a>
                         </footer>
+	                    <aside class="notes">
+		                    Unreal. You can get all the power of Unreal Tournaments for your game. Drawback, you need to
+		                    code it in C++. But you get a game for PC and gaming consoles, not bad!
+		                    It has Physics, AI, animation effects libraries and so...
+	                    </aside>
                     </section>
 
                 </section>
@@ -198,11 +250,20 @@
 
                     <section>
                         <h2>Which games do you produce?</h2>
+	                    <aside class="notes">
+		                    But I want to ask one question, which games do you produce? Are you producing a Massively Multiplayer Online
+		                    shooter or role playing game? In most of the cases is no, a bigh share of games out there
+		                    are just casual games.
+	                    </aside>
                     </section>
 
                     <section>
                         <div class="logo"></div>
                         <h3>Bringing people together to have a good time with games wherever, whenever!</h3>
+	                    <aside class="notes">
+		                    For example, at GameDuell, we have this mission: Bringing people together to have a good time with games: wherever, whenever!
+		                    Some facts, we are Berlin and we are over 200 employees.
+	                    </aside>
                     </section>
 
                     <section>
@@ -217,11 +278,22 @@
                             <img src="images/mbs.jpg" alt="Balloon Blast"/>
                         </div>
                     </section>
+	                <aside class="notes">
+		                The games we produce to fulfill our mission are Casual Skill Games. Our games are easy to learn,
+		                but it takes a lifetime to master. Many of our games are multiplayer.
+		                Here you can see a sample of the games we produce: Roll 5, Belote, Ballon Blast...
+		                All those games need to look nice and catchy, but they don't need to be backed up by, for example,
+		                the power of Unreal Engine.
+	                </aside>
                 </section>
 
                 <section>
                     <section>
                         <h2>Can we use the knowledge we acquired building webs?</h2>
+	                    <aside class="notes">
+		                    We learned a pretty much during all those years of front end development, and it would be a
+		                    shame if we could not use it, right? So, Can we use the knowledge we acquired building webs?
+	                    </aside>
                     </section>
 
                     <section>
@@ -230,22 +302,38 @@
                             <h2 class="fragment roll-in">How?</h2>
                             <h1 class="fragment roll-in">With DOM!</h1>
                         </p>
+	                    <aside class="notes">
+		                    The answer is Yes!, and we can achieve it by building games using DOM rendering.
+		                    With dom rendering, we mean using the full power of the markup and CSS
+	                    </aside>
                     </section>
                 </section>
 				<section>
 
 					<section>
 						<h2>What's the difference between these?</h2>
+						<aside class="notes">
+							Our websites are not static pages anymore. More and more, we need to apply animations and
+							at the end, our web pages look slowly more like a game.
+							For example, what's the difference between these?
+						</aside>
 					</section>
 					<section class="full">
 						<div class="banner fragment fall-down slow">
 							This site uses cookies!
 						</div>
+						<aside class="notes">
+							Typical top banner that says, this site uses cookies. Who hasn't built this, at least once?
+						</aside>
 					</section>
 					<section>
 						<div class="fragment" >
 							<div class="card ace slide slow"></div>
 						</div>
+						<aside class="notes">
+							A wild card appears! This could be one of the basic moves of your new game. Let's check how
+                            it's done behind the scenes!
+						</aside>
 					</section>
 					<section>
 						<h2>Behind the scenes</h2>
@@ -264,6 +352,10 @@
 	transition: all 1.5s ease;
 }
 						</code></pre>
+                        <aside class="notes">
+                            We can see, that the only magic that happens in here, is a transform and a transition.
+                            We start with the element hidden, and we move it to be in full sight.
+                        </aside>
 					</section>
 					<section>
 						<h2>Behind the scenes</h2>
@@ -282,6 +374,10 @@
 	transition: all 1.5s ease;
 }
 						</code></pre>
+                        <aside class="notes">
+                            The code for the card is dangerously the same: in 1.5 seconds is moving 300 pixels to the left
+                            As you can appreciate, this is not so much different.
+                        </aside>
 					</section>
 				</section>
 
@@ -289,11 +385,18 @@
 
 					<section>
 						<h2>... and these?</h2>
+                        <aside class="notes">
+                            Let's see another example
+                        </aside>
 					</section>
 					<section>
-						<div class="banner errorMessage fragment zoom-in">
+						<div class="banner errorMessage fragment zoom-in slow">
 							This field must be corrected
 						</div>
+                        <aside class="notes">
+                            Another 1000 times implemented feature: Some div that grows, for example, could be next to an input field
+                            or maybe appear when there is problem with a form.
+                        </aside>
 					</section>
 					<section>
 						<div class="fragment hand">
@@ -301,6 +404,10 @@
 							<div class="card centered queen"></div>
 							<div class="card centered king slow grow"></div>
 						</div>
+                        <aside class="notes">
+                            Here we can see, how a a card in the players hand is magnified, for example when the player
+                            taps/clicks on it. This is a quite common technique to improve user experience.
+                        </aside>
 					</section>
 					<section>
 						<h2>Behind the scenes</h2>
@@ -318,6 +425,10 @@
 }
 .slow { transition: all 1.5s ease; }
 						</code></pre>
+                        <aside class="notes">
+                            Now again, let's check the code for the failure message: the div initial state is being 1/10 of its size
+                            and then applying a transition of 1.5 seconds, it grows till its normal size.
+                        </aside>
 					</section>
 					<section>
 						<h2>Behind the scenes</h2>
@@ -334,16 +445,27 @@
 }
 .slow { transition: all 1.5s ease; }
 						</code></pre>
+                        <aside class="notes">
+                            Checking the code for the cards, it's pretty much the same again. We start implicitly with its
+                            normal size and we transition in 1.5 seconds to size which is 50% bigger.
+                        </aside>
 					</section>
 				</section>
 				<section>
 					<section>
 						<h2>... or these?</h2>
+                        <aside class="notes">
+                            Another example yet
+                        </aside>
 					</section>
 					<section data-transition="none">
 						<div class="banner fragment fade-out slow">
 							This message will be destroyed immediately!
 						</div>
+                        <aside class="notes">
+                            Sometimes we need to show some messages for some seconds, and then disappear slowly.
+                            For example, a notification for the server.
+                        </aside>
 					</section>
 					<section data-transition="none">
 						<div class="fragment fade-out slow meld">
@@ -351,6 +473,9 @@
 							<div class="stacked centered card queen slight-rotated-right"></div>
 							<div class="stacked centered card king"></div>
 						</div>
+                        <aside class="notes">
+                            Here we an see a meld, and how it disappears once all players played their cards.
+                        </aside>
 					</section>
 					<section>
 						<h2>Behind the scenes</h2>
@@ -367,6 +492,10 @@
 }
 .slow { transition: all 1.5s ease; }
 						</code></pre>
+                        <aside class="notes">
+                            Let's check the code for the website. We just play with the opacity of the div element, and
+                            adding a transition there.
+                        </aside>
 					</section>
 					<section>
 						<h2>Behind the scenes</h2>
@@ -383,21 +512,32 @@
 }
 .slow { transition: all 1.5s ease; }
 						</code></pre>
+                        <aside class="notes">
+                            Comparing it to the code with the cards, it is exactly the same!
+                        </aside>
 					</section>
 				</section>
 				<section>
 
 					<section>
 						<h2>... or even these?</h2>
-						<aside class="notes">image rotated, make card rotate while moving</aside>
+						<aside class="notes">
+                            Let's check one last example
+                        </aside>
 					</section>
 					<section data-transition="none">
 						<div class="banner feedback">feedback</div>
+                        <aside class="notes">
+                            Let me introduce you the feedback button. Again this shouldn't be stranger for many of you
+                        </aside>
 					</section>
 					<section data-transition="none">
 						<div class="playground">
 							<div class="fragment card ace playing slow"></div>
 						</div>
+                        <aside class="notes">
+                            What if we want to play a card in our game? Here you are, a flying card that does half a spin.
+                        </aside>
 					</section>
 					<section>
 						<h2>Behind the scenes</h2>
@@ -411,6 +551,10 @@
 	transform: rotate(-90deg);
 }
 						</code></pre>
+                        <aside class="notes">
+                            This example is pretty simple and we just play with a transformation, rotate in this case.
+                            There is no need for transitions as it is a static element.
+                        </aside>
 					</section>
 					<section>
 						<h2>Behind the scenes</h2>
@@ -427,12 +571,20 @@
 }
 .slow { transition: all 1.5s ease; }
 						</code></pre>
+                        <aside class="notes">
+                            OK, this is slightly more complicated, but hey, it's still 2 one liners! The cards starts
+                            at a position which is 120% its own height and upside down, and finishes 50% of it's width to the left
+                            and 25% of its height up. Furthermore we rotate 180°
+                        </aside>
 					</section>
 
 				</section>
 				<section>
 					<section>
 						<h2>Tips to Improve Productivity</h2>
+                        <aside class="notes">
+                            Of course there some tips to improve your productivity as game developers
+                        </aside>
 					</section>
 					<section>
 						<h2>WebSockets</h2>
@@ -441,6 +593,11 @@
 							<li>Perfect for Reactive Apps</li>
 							<li>Supported by All Major Browsers</li>
 						</ul>
+                        <aside class="notes">
+                            Websockets, are must have, there should be an automatic assimilation between multiplayer and
+                            websockets.
+                            They are perfect for reactive apps and have full duplex communication.
+                        </aside>
 					</section>
 					<section>
 						<h2>Box2D</h2>
@@ -449,6 +606,10 @@
 							<li>Models a Gravity World</li>
 							<li>Collision Detection</li>
 						</ul>
+                        <aside class="notes">
+                            If you are not so fond in physics, this nice library can help you. It simulates a gravity
+                            world and you you can get how your objects behave in such a world in a very realistic way.
+                        </aside>
 					</section>
 					<section>
 						<h2>Work with your own coordinate system</h2>
@@ -457,11 +618,24 @@
 							<li>Abstraction from the Real Screen Size</li>
 							<li>Keep Code Simple</li>
 						</ul>
+                        <aside class="notes">
+                            For simplicity, I was working with percentages in the previous examples, but if you want to
+                            develop a game, you should think about getting away of the pixel world and create your own
+                            coordinates system (for example 0 to 100) this way you can get abstracted from the real screen
+                            size. However, you need to calculate some of these values in your JS and then apply inline
+                            styles.
+                            These are only some easy tips, but there are much more hints and tips you can use.
+                            Also the examples are quite easy, but our HTML5 games are done purely with DOM.
+                            I recommend you to try them out.
+                        </aside>
 					</section>
 				</section>
 				<section>
 					<h1>Browser Games</h1>
 					<h2>Not only for Specialists!</h2>
+                    <aside class="notes">
+	                    You now know that browser games are not only for specialists. You can also be a game developer
+                    </aside>
 				</section>
 				<section>
 					<h1>Q&A</h1>
@@ -471,6 +645,11 @@
 					<div><a href="http://inside.gameduell.com/">inside.gameduell.com</a></div>
 					<div><a href="http://www.techtalk-berlin.de/">www.techtalk-berlin.de</a></div>
 				</section>
+				<aside class="notes">
+					If you want to get to know better GameDuell, you can go to inside.gameduell.com and get some info there
+					We also hold regular tech talks about interesting technology topics.
+					Thank you
+				</aside>
 			</div>
 
 		</div>
